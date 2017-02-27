@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="My Chart" name="description"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width" name="viewport"/>
+        <title>
+            setCursor.github.io
+        </title>
+        <script data-require="jquery@2.2.4" data-semver="2.2.4" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <link data-require="bootstrap@3.3.6" data-semver="3.3.6" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+        </script>
+        <script src="setCursor.min.js">
+        </script>
+        <script src="script.js">
+        </script>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    setCursor
+                                </a>
+                                <ul class="nav navbar-nav">
+                                    <li class="active">
+                                        <a target="_blank"  href="https://github.com/haruncpi/setCursor">
+                                            Repository
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="http://learn24bd.com">
+                                            Website
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+
+              <p>
+              <strong>Md.Harun-Ur-Rashid</strong> <br>
+              Bangladesh <br>
+              website: <a href="http://learn24bd.com" target="_blank">learn24bd.com</a>
+              <br>
+              <br>
+              Plugin: setCursor <br>
+              Version: 1.0 <br>
+              Add jQuery first and then add setCursor.min.js</p>
+  
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <input class="a" type="text" value="239.209" />
+                <div class="btn-group">
+                  <button class="a">Focus & Set first</button>
+                  <button class="b">Focus & Set Last</button>
+                  <button class="c">Focus & Select</button>
+                  <button class="d">Focus & Select After 2 digit</button>
+                </div>
+                
+                <h4>Example</h4>
+                <div class="row">
+        
+                <div class="col-md-6">
+<pre>
+  $(function() {
+       $('input.a').setCursor();
+
+       $('button.a').click(function(){
+          $('input.a').setCursor({start:true});
+       })
+
+        $('button.b').click(function(){
+          $('input.a').setCursor({last:true});
+       })
+
+        $('button.c').click(function(){
+          $('input.a').setCursor({select:true});
+       })
+        $('button.d').click(function(){
+          $('input.a').setCursor({after:2});
+       })
+  })
+</pre>
+                </div>
+                          
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h3>Available Options</h3>
+                <table class="table table-bordered table-condensed table-striped">
+                  <thead>
+                    <tr>
+                      <th>Option</th>
+                      <th>Type</th>
+                      <th>Default</th>
+                      <th>Remarks</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>start</td>
+                      <td>boolean</td>
+                      <td>false</td>
+                      <td>Set the cursor at first</td>
+                    </tr>
+                    <tr>
+                      <td>end</td>
+                      <td>boolean</td>
+                      <td>true</td>
+                      <td>Set the cursor at the end of text</td>
+                    </tr>
+                    <tr>
+                      <td>select</td>
+                      <td>boolen</td>
+                      <td>false</td>
+                      <td>Select the text</td>
+                    </tr>
+                    <tr>
+                      <td>after</td>
+                      <td>number</td>
+                      <td>0</td>
+                      <td>Set the cursor after number of letter</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+    </body>
+</html>
